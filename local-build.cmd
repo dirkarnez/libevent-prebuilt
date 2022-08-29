@@ -18,7 +18,11 @@ D:\Softwares\cmake-3.23.0-rc1-windows-x86_64\bin;
 cmake.exe -G"MinGW Makefiles" ^
 -DCMAKE_BUILD_TYPE=Release ^
 -DBUILD_SHARED_LIBS=OFF ^
+-DEVENT__LIBRARY_TYPE="STATIC" ^
 -DEVENT__DISABLE_MBEDTLS=ON ^
+-DEVENT__DISABLE_SAMPLES=ON ^
+-DEVENT__DISABLE_TESTS=ON ^
+-DEVENT__DISABLE_REGRESS=ON ^
 -DOPENSSL_DIR="D:/Code Projects/cpp-libraries/openssl-installation" ^
 -DOPENSSL_USE_STATIC_LIBS=TRUE ^
 -DCMAKE_INSTALL_PREFIX="build/libevent-installation" -B./build
